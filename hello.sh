@@ -1,12 +1,12 @@
 #!/bin/bash
 #
-gfortran -c hello.f
+g77 -c hello.f
 if [ $? -ne 0 ]; then
   echo "Errors compiling hello.f"
   exit
 fi
 #
-gfortran hello.o
+g77 hello.o
 if [ $? -ne 0 ]; then
   echo "Errors linking and loading hello.o"
   exit
